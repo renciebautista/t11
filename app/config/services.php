@@ -14,20 +14,6 @@ return array(
 	|
 	*/
 
-	'mailgun' => array(
-		'domain' => '',
-		'secret' => '',
-	),
-
-	'mandrill' => array(
-		'secret' => '',
-	),
-
-	'stripe' => array(
-		'model'  => 'User',
-		'secret' => '',
-	),
-
 	'twilio' => array(
 		'default' => 'twilio',
 		'connections' => array(
@@ -40,7 +26,7 @@ return array(
 			| Your Twilio Account SID #
 			|
 			*/
-			'sid' => 'AC9f6e210ba74153b8338e2eeab15d3f07',
+			'sid' => 'Caf038c865937960c59c33a560972cae6',
 			/*
 			|--------------------------------------------------------------------------
 			| Access Token
@@ -49,7 +35,7 @@ return array(
 			| Access token that can be found in your Twilio dashboard
 			|
 			*/
-			'token' => '5e8c6af862408dc416f0eb69dd37c98b',
+			'token' => '82239b1c74a0bee245f9fac58d5ed6d9',
 			/*
 			|--------------------------------------------------------------------------
 			| From Number
@@ -68,9 +54,24 @@ return array(
 			| It is STRONGLY advised to leave this set to true for production environments.
 			|
 			*/
-			// 'ssl_verify' => true,
+			'ssl_verify' => false,
 			),
 		),
+	),
+
+
+	'mailgun' => array(
+		'domain' => '',
+		'secret' => '',
+	),
+
+	'mandrill' => array(
+		'secret' => '',
+	),
+
+	'stripe' => array(
+		'model'  => 'User',
+		'secret' => '',
 	),
 
 );

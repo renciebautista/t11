@@ -32,9 +32,9 @@ class SmsController extends \BaseController {
 	 */
 	public function store()
 	{
-		Twilio::message(Input::get('number'), Input::get('message'));
-		return Redirect::action('SmsController@index')
-				->with('message', 'Message succesfully sent.');
+		Twilio::message('+639178935785', 'Pink Elephants and Happy Rainbows');
+		// return Redirect::action('SmsController@index')
+		// 		->with('message', 'Message succesfully sent.');
 	}
 
 	/**
