@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
+
+Route::get("/", 'SmsController@index');
+Route::resource('sms', 'SmsController');
