@@ -122,7 +122,6 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Aloha\Twilio\TwilioServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider',
 
 	),
 
